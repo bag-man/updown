@@ -1,7 +1,6 @@
 {
   "name": "updown",
   "version": "0.0.0",
-  "description": "",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -16,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/bag-man/updown/issues"
   },
-  "homepage": "https://github.com/bag-man/updown"
+  "homepage": "https://github.com/bag-man/updown",
+  "dependencies": {
+    "express": "^4.11.2"
+  },
+  "devDependencies": {}
 }
