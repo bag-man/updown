@@ -1,7 +1,8 @@
 while true; do
-  heroku ps:scale web=0 --app upanddown
+  python -m SimpleHTTPServer 1234 &
+  PID=$!
   sleep 30
-  heroku ps:scale web=1 --app upanddown
+  kill $PID
   sleep 30
 done 
 # nohup ./run.sh > /dev/null &
